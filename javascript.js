@@ -1,5 +1,5 @@
 let display = document.getElementById("display");
-        let expression = "";
+        let expression = 0;
 
         function appendToDisplay(value) {
             expression += value;
@@ -7,13 +7,13 @@ let display = document.getElementById("display");
         }
 
         function clearDisplay() {
-            expression = "";
+            expression = 0;
             display.innerHTML = "0"; 
         }
 
         function calculateResult() {
             try {
-                const result = eval(expression);
+                const result = expression;
                 expression = result;
                 display.innerHTML = result;
             } catch (error) {
