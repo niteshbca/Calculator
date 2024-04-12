@@ -1,6 +1,6 @@
 body {
             font-family: Arial, sans-serif;
-	background-color:lightblue;
+background-color:lightblue;
         }
 h1{
  color:rgb(51, 19, 233);
@@ -42,4 +42,4 @@ margin: 5px;
             border-radius: 5px;
             background-color: white;
             cursor: pointer;
-        }
+	}
