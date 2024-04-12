@@ -1,4 +1,4 @@
-function addToDisplay(value) {
+ function addToDisplay(value) {
       document.getElementById('display').value += value;
     }
 
