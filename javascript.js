@@ -1,22 +1,13 @@
-let display = document.getElementById("display");
-let expression = "";
-
 function appendToDisplay(value) {
-    expression += value;
-    display.innerHTML = expression;
+    document.getElementById('display').value += value;
 }
 
 function clearDisplay() {
-    expression = "";
-    display.innerHTML = "0"; 
+    document.getElementById('display').value = '';
 }
 
-function calculateResult() {
-    try {
-        const result = eval(expression);
-        expression = result.toString();
-        display.innerHTML = result;
-    } catch (error) {
-        display.innerHTML = "Error";
-    }
+function calculate() {
+    let expression = document.getElementById('display').value;
+    let result = eval(expression);
+    document.getElementById('display').value = result;
 }
